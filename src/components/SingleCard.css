@@ -1,0 +1,50 @@
+.card {
+  position: relative;
+  max-width: 200px;
+  max-height: 200px;
+}
+.card img {
+  width: 100%;
+  display: block;
+  border: 2px solid whitesmoke;
+  /* box-shadow: 2px 2px #ffff; */
+  border-radius: 6px;
+}
+
+/* front of card */
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+  box-shadow: 2px 2px #ee7481;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+  border: 4px solid #ffff;
+  /* box-shadow: 3px 3px 2px #ee7481; */
+}
+
+/* back of card */
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+  /* box-shadow: 3px 3px #ee7481; */
+  /* box-shadow: 3px 3px #ffffff; */
+  /* box-shadow: 3px 3px #ffff; */
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+@media only screen and (min-width: 541px) and (max-width: 991px) {
+  .card {
+    max-width: 150px;
+    max-height: 150%;
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
