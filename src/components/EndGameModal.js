@@ -23,7 +23,7 @@ export default function EndGameModal({
         <h1>Congratulations!</h1>
         <p>
           You did it in{" "}
-          <span style={{ backgroundColor: "#ffd910" }}>{moves}</span> moves and{" "}
+          <span style={{ backgroundColor: "#ffd910" }}>{moves}</span> moves in{" "}
           <span style={{ backgroundColor: "#ffd910" }}>
             {minSecs(finalTime - inicialTime)}
           </span>{" "}
@@ -36,7 +36,7 @@ export default function EndGameModal({
             handleCloseEndModal();
           }}
         >
-          Play new game
+          Play again
         </button>
         <img src="img/homer-crazy.png" alt="Homer jumping looking like crazy" />
       </div>

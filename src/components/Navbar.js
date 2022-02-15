@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import "./Navbar.css";
 
 export default function Navbar({
@@ -8,12 +7,9 @@ export default function Navbar({
   handleCardsQuant,
   cardsQuant,
 }) {
-  // const [selection, setSelection] = useState(18);
-
   const handleSelect = (e) => {
     handleCardsQuant(e.target.value);
     newGame(e.target.value);
-    // setSelection(e.target.value);
   };
 
   return (
