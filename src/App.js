@@ -43,6 +43,8 @@ function App() {
   const [disabled, setDisabled] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [showEndModal, setShowEndModal] = useState(false);
+  const [inicialTime, setInicialTime] = useState(0);
+  const [finalTime, setFinalTime] = useState(0);
 
   // Set state CARDS and how many cards,
   // Start new game:
@@ -57,6 +59,8 @@ function App() {
     setCards(shuffledCards);
     setMoves(0);
     setChoiceOne(null);
+    setInicialTime(new Date().getTime() / 60000);
+    setFinalTime(0);
   };
 
   // set state cardsQuant (user selection of number of cards):
@@ -96,7 +100,8 @@ function App() {
     }
     if (cards.length > 0 && cards.every((card) => card.matched === true)) {
       setShowModal(false);
-      setShowEndModal(true);
+      setTimeout(() => setShowEndModal(true), 500);
+      setFinalTime(new Date().getTime() / 60000);
     }
   }, [choiceOne, choiceTwo]);
 
@@ -165,6 +170,9 @@ function App() {
             handleCloseEndModal={handleCloseEndModal}
             newGame={newGame}
             cardsQuant={cardsQuant}
+            moves={moves}
+            inicialTime={inicialTime}
+            finalTime={finalTime}
           />
         )}
       </section>
