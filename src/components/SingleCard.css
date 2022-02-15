@@ -7,7 +7,6 @@
   width: 100%;
   display: block;
   border: 2px solid whitesmoke;
-  /* box-shadow: 2px 2px #ffff; */
   border-radius: 6px;
 }
 
@@ -23,16 +22,12 @@
   transform: rotateY(0deg);
   transition-delay: 0.2s;
   border: 4px solid #ffff;
-  /* box-shadow: 3px 3px 2px #ee7481; */
 }
 
 /* back of card */
 .card .back {
   transition: all ease-in 0.2s;
   transition-delay: 0.2s;
-  /* box-shadow: 3px 3px #ee7481; */
-  /* box-shadow: 3px 3px #ffffff; */
-  /* box-shadow: 3px 3px #ffff; */
 }
 
 .flipped .back {
