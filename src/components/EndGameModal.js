@@ -22,7 +22,7 @@ export default function EndGameModal({
         </button>
         <h1>Congratulations!</h1>
         <p>
-          You did it in{" "}
+          You did it with{" "}
           <span style={{ backgroundColor: "#ffd910" }}>{moves}</span> moves in{" "}
           <span style={{ backgroundColor: "#ffd910" }}>
             {minSecs(finalTime - inicialTime)}
