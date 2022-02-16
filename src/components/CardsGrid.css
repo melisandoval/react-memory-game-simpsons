@@ -34,6 +34,12 @@
   }
 }
 
+@media only screen and (min-width: 739px) {
+  .cards-grid-18 {
+    margin: 5% 3% 3%;
+  }
+}
+
 /* grid of 12 cards */
 
 .cards-grid-12 {
@@ -45,30 +51,35 @@
   place-items: center;
 }
 
-@media only screen and (min-width: 541px) and (max-width: 640px) {
+@media only screen and (max-width: 541px) {
   .cards-grid-12 {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-@media only screen and (min-width: 641px) and (max-width: 737px) {
-  .cards-grid-12 {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-}
-
-@media only screen and (min-width: 737px) and (max-width: 913px) {
-  .cards-grid-12 {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
-
-@media only screen and (max-width: 913px) {
-  .cards-grid-12 {
+    margin-left: 2%;
+    margin-right: 2%;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 542px) and (max-width: 640px) {
+  .cards-grid-12 {
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 913px) {
+  .cards-grid-12 {
+    margin-left: 8%;
+    margin-right: 8%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 914px) and (max-width: 1190px) {
+  .cards-grid-12 {
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 13%;
+    margin-right: 13%;
   }
 }
 
