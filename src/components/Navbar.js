@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 export default function Navbar({
@@ -7,8 +7,15 @@ export default function Navbar({
   handleCardsQuant,
   cardsQuant,
 }) {
+  const [checked, setChecked] = useState(true);
+
   const handleSelect = (e) => {
     handleCardsQuant(e.target.value);
+    if (e.target.value == 18) {
+      setChecked(true);
+    } else {
+      setChecked(false);
+    }
     newGame(e.target.value);
   };
 
@@ -24,7 +31,7 @@ export default function Navbar({
               id="12"
               type="radio"
               onChange={handleSelect}
-              name="Cards quantity"
+              name="quantity"
               value="12"
             />
             12
@@ -34,8 +41,9 @@ export default function Navbar({
               id="18"
               type="radio"
               onChange={handleSelect}
-              name="Cards quantity"
+              name="quantity"
               value="18"
+              checked={checked}
             />
             18
           </label>
@@ -44,7 +52,7 @@ export default function Navbar({
               id="24"
               type="radio"
               onChange={handleSelect}
-              name="Cards quantity"
+              name="quantity"
               value="24"
             />
             24
