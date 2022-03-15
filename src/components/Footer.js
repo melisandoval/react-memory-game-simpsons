@@ -5,7 +5,7 @@ export default function Footer() {
     <footer>
       <p>
         Coded by{" "}
-        <a href="https://github.com/MelisaSandoval" target="_blank">
+        <a href="https://github.com/melisandoval" target="_blank">
           Melisa Sandoval
         </a>
         . Images sources:{" "}
