@@ -1,18 +1,6 @@
 .App {
   position: relative;
   text-align: center;
-  margin: 0% 10% 0%;
-  height: 100vh;
-}
-
-@media only screen and (max-width: 540px) {
-  .App {
-    margin: 0% 0% 0% 0%;
-  }
-}
-
-@media only screen and (min-width: 541px) and (max-width: 991px) {
-  .App {
-    margin: 0% 0% 0% 0%;
-  }
+  margin: 0;
+  height: 100%;
 }
