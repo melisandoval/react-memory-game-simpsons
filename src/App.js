@@ -24,7 +24,7 @@ function App() {
   const [disabled, setDisabled] = useState(false);
   // moves counter:
   const [moves, setMoves] = useState(0);
-  // modal for every card match:
+  // modal for every cards match:
   const [showModal, setShowModal] = useState(false);
   // modal for the end of the game:
   const [showEndModal, setShowEndModal] = useState(false);
