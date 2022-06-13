@@ -1,64 +1,45 @@
 import { useState, useEffect } from "react";
 
 //components
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Modal from "./components/Modal";
-import CardGrid from "./components/CardsGrid";
-import EndGameModal from "./components/EndGameModal";
-import Footer from "./components/Footer";
+import Header from "./Components/Header";
+import Navbar from "./Components/Navbar";
+import Modal from "./Components/Modal";
+import CardGrid from "./Components/CardsGrid";
+import EndGameModal from "./Components/EndGameModal";
+import Footer from "./Components/Footer";
+
+// services:
+import { getCards } from "./Services/getCards";
 
 //styles:
 import "./App.css";
 
-const characters = [
-  { name: "Abraham", src: "/img/Abraham.png", alt: "Abraham Simpson" },
-  { name: "Barney", src: "/img/Barney.png", alt: "Barney Gumble" },
-  { name: "Bart", src: "/img/Bart.png", alt: "Bart Simpson" },
-  { name: "Burns", src: "/img/Burns.png", alt: "Montgomery Burns" },
-  { name: "Flanders", src: "/img/Flanders.png", alt: "Ned Flanders" },
-  { name: "Homer", src: "/img/Homer.png", alt: "Homer Simpson" },
-  { name: "Lisa", src: "/img/Lisa.png", alt: "Lisa Simpson" },
-  { name: "Maggie", src: "/img/Maggie.png", alt: "Maggie Simpson" },
-  { name: "Marge", src: "/img/Marge.png", alt: "Marge Simpson" },
-  { name: "Moe", src: "/img/Moe.png", alt: "Moe Szyslak" },
-  { name: "Krusty", src: "/img/Krusty.png", alt: "Krusty the Clown" },
-  { name: "Ralph", src: "/img/Ralph.png", alt: "Ralph Wiggum" },
-  { name: "Milhouse", src: "/img/Milhouse.png", alt: "Milhouse Van Houten" },
-  { name: "Skinner", src: "/img/Skinner.png", alt: "Seymour Skinner" },
-  { name: "Dog", src: "/img/Dog.png", alt: "Santa's Little Helper" },
-  { name: "Apu", src: "/img/Apu.png", alt: "Apu Nahasapeemapetilon" },
-  { name: "Dignity", src: "/img/Dignity.png", alt: "The Dignity" },
-  { name: "Chief", src: "/img/Chief.png", alt: "Chief Clancy Wiggum" },
-  { name: "Edna", src: "/img/Edna.png", alt: "Edna Krabappel" },
-  { name: "Smithers", src: "/img/Smithers.png", alt: "Waylon Smithers" },
-];
-
 function App() {
+  // cards:
   const [cards, setCards] = useState([]);
   const [cardsQuant, setCardsQuant] = useState(18);
-  const [moves, setMoves] = useState(0);
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
+  // state to prevent for a second the user from clicking more cards when two are showing their character:
   const [disabled, setDisabled] = useState(false);
+  // moves counter:
+  const [moves, setMoves] = useState(0);
+  // modal for every card match:
   const [showModal, setShowModal] = useState(false);
+  // modal for the end of the game:
   const [showEndModal, setShowEndModal] = useState(false);
   const [inicialTime, setInicialTime] = useState(0);
   const [finalTime, setFinalTime] = useState(0);
 
-  // Set state CARDS and how many cards,
-  // Start new game:
+  // NewGame accepts a number that represents the number of cards the user choose to play with:
   const newGame = (n) => {
-    const halfN = n / 2;
-    const selectedCharacters = characters
-      .sort(() => Math.random() - 0.5)
-      .slice(0, halfN);
-    const shuffledCards = [...selectedCharacters, ...selectedCharacters]
-      .sort(() => Math.random() - 0.5)
-      .map((card) => ({ ...card, id: Math.random(), matched: false }));
-    setCards(shuffledCards);
+    // set state Cards with the cards we get from function getCards:
+    setCards(getCards(n));
+    // set moves counter to 0
     setMoves(0);
+    // set first card choice to null:
     setChoiceOne(null);
+    // set inicial time for the new game:
     setInicialTime(new Date().getTime() / 60000);
     setFinalTime(0);
   };
@@ -99,15 +80,18 @@ function App() {
       }
     }
     if (cards.length > 0 && cards.every((card) => card.matched === true)) {
-      setShowModal(false);
-      setTimeout(() => setShowEndModal(true), 500);
+      // if al the cards are already matched:
+      setShowModal(false); // because we want to show the "End Modal", so:
+      // set final time to show to user:
       setFinalTime(new Date().getTime() / 60000);
+      // show end modal:
+      setTimeout(() => setShowEndModal(true), 500);
     }
   }, [choiceOne, choiceTwo]);
 
-  // Moves counter,
+  // Reset the moves counter:
   // Set choiceOne and choiceTwo back to null
-  // Makes Woo-hoo Modal disappear:
+  // Makes "Woo-hoo Modal" disappear:
   const resetMoves = () => {
     setChoiceOne(null);
     setChoiceTwo(null);
