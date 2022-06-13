@@ -11,7 +11,7 @@ export default function Navbar({
 
   const handleSelect = (e) => {
     handleCardsQuant(e.target.value);
-    if (e.target.value == 18) {
+    if (e.target.value === "18") {
       setChecked(true);
     } else {
       setChecked(false);
