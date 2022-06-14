@@ -1,4 +1,5 @@
 import "./EndGameModal.css";
+import homerCrazy from "../assets/homer-crazy.png";
 
 export default function EndGameModal({
   handleCloseEndModal,
@@ -38,7 +39,11 @@ export default function EndGameModal({
         >
           Play again
         </button>
-        <img src="img/homer-crazy.png" alt="Homer jumping looking like crazy" />
+        <img
+          src={homerCrazy}
+          alt="Homer jumping looking like crazy"
+          loading="eager"
+        />
       </div>
     </div>
   );

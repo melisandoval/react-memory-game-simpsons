@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Modal from "./Components/Modal";
-import CardGrid from "./Components/CardsGrid";
+import CardsGrid from "./Components/CardsGrid";
 import EndGameModal from "./Components/EndGameModal";
 import Footer from "./Components/Footer";
 
@@ -117,7 +117,7 @@ function App() {
       <section className={"cards-grid-container"}>
         {cards.length === 12 && (
           <div className="cards-grid-12">
-            <CardGrid
+            <CardsGrid
               cards={cards}
               handleChoice={handleChoice}
               disabled={disabled}
@@ -128,7 +128,7 @@ function App() {
         )}
         {cards.length === 18 && (
           <div className="cards-grid-18">
-            <CardGrid
+            <CardsGrid
               cards={cards}
               handleChoice={handleChoice}
               disabled={disabled}
@@ -139,7 +139,7 @@ function App() {
         )}
         {cards.length === 24 && (
           <div className="cards-grid-24">
-            <CardGrid
+            <CardsGrid
               cards={cards}
               handleChoice={handleChoice}
               disabled={disabled}
@@ -159,6 +159,7 @@ function App() {
             finalTime={finalTime}
           />
         )}
+        {console.log(cards)}
       </section>
       <Footer />
     </div>

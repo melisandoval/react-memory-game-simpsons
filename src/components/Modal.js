@@ -1,5 +1,6 @@
 import React from "react";
 import "./Modal.css";
+import homerWooHoo from "../assets/homer-woo-hoo.png";
 
 // "woo-hoo" Modal:
 export default function Modal() {
@@ -8,9 +9,9 @@ export default function Modal() {
       <div className="modal-content">
         <div>
           <img
-            src="img/HOMER-BUBBLE.png"
+            src={homerWooHoo}
             alt="Homer saying: whoo hoo!"
-            loading="auto"
+            loading="eager"
           />
         </div>
       </div>

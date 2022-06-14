@@ -5,7 +5,7 @@ html {
 
 body {
   margin: 0;
-  background-image: url("../public/img/_background_simpsons.jpg");
+  background-image: url("../public/background_simpsons.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -15,6 +15,7 @@ body {
 * {
   font-family: "Balsamiq Sans", cursive;
   font-size: 1.05rem;
+  font-weight: 400;
 }
 
 code {

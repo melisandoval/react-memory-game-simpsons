@@ -1,30 +1,47 @@
+import Abraham from "../assets/Abraham.png";
+import Apu from "../assets/Apu.png";
+import Barney from "../assets/Barney.png";
+import Bart from "../assets/Bart.png";
+import Burns from "../assets/Burns.png";
+import Chief from "../assets/Chief.png";
+import Dignity from "../assets/Dignity.png";
+import Dog from "../assets/Dog.png";
+import Edna from "../assets/Edna.png";
+import Flanders from "../assets/Flanders.png";
+import Homer from "../assets/Homer.png";
+import Lisa from "../assets/Lisa.png";
+import Maggie from "../assets/Maggie.png";
+import Marge from "../assets/Marge.png";
+import Moe from "../assets/Moe.png";
+import Krusty from "../assets/Krusty.png";
+import Ralph from "../assets/Ralph.png";
+import Milhouse from "../assets/Milhouse.png";
+import Skinner from "../assets/Skinner.png";
+import Smithers from "../assets/Smithers.png";
+
 // List of characters that we can find in the game cards:
 export function getCharacters() {
   const characters = [
-    { name: "Abraham", src: "/img/Abraham.png", alt: "Abraham Simpson" },
-    { name: "Barney", src: "/img/Barney.png", alt: "Barney Gumble" },
-    { name: "Bart", src: "/img/Bart.png", alt: "Bart Simpson" },
-    { name: "Burns", src: "/img/Burns.png", alt: "Montgomery Burns" },
-    { name: "Flanders", src: "/img/Flanders.png", alt: "Ned Flanders" },
-    { name: "Homer", src: "/img/Homer.png", alt: "Homer Simpson" },
-    { name: "Lisa", src: "/img/Lisa.png", alt: "Lisa Simpson" },
-    { name: "Maggie", src: "/img/Maggie.png", alt: "Maggie Simpson" },
-    { name: "Marge", src: "/img/Marge.png", alt: "Marge Simpson" },
-    { name: "Moe", src: "/img/Moe.png", alt: "Moe Szyslak" },
-    { name: "Krusty", src: "/img/Krusty.png", alt: "Krusty the Clown" },
-    { name: "Ralph", src: "/img/Ralph.png", alt: "Ralph Wiggum" },
-    {
-      name: "Milhouse",
-      src: "/img/Milhouse.png",
-      alt: "Milhouse Van Houten",
-    },
-    { name: "Skinner", src: "/img/Skinner.png", alt: "Seymour Skinner" },
-    { name: "Dog", src: "/img/Dog.png", alt: "Santa's Little Helper" },
-    { name: "Apu", src: "/img/Apu.png", alt: "Apu Nahasapeemapetilon" },
-    { name: "Dignity", src: "/img/Dignity.png", alt: "The Dignity" },
-    { name: "Chief", src: "/img/Chief.png", alt: "Chief Clancy Wiggum" },
-    { name: "Edna", src: "/img/Edna.png", alt: "Edna Krabappel" },
-    { name: "Smithers", src: "/img/Smithers.png", alt: "Waylon Smithers" },
+    { name: "Abraham", src: Abraham, alt: "Abraham Simpson" },
+    { name: "Apu", src: Apu, alt: "Apu Nahasapeemapetilon" },
+    { name: "Barney", src: Barney, alt: "Barney Gumble" },
+    { name: "Bart", src: Bart, alt: "Bart Simpson" },
+    { name: "Burns", src: Burns, alt: "Montgomery Burns" },
+    { name: "Chief", src: Chief, alt: "Chief Clancy Wiggum" },
+    { name: "Dignity", src: Dignity, alt: "The Dignity" },
+    { name: "Dog", src: Dog, alt: "Santa's Little Helper" },
+    { name: "Edna", src: Edna, alt: "Edna Krabappel" },
+    { name: "Flanders", src: Flanders, alt: "Ned Flanders" },
+    { name: "Homer", src: Homer, alt: "Homer Simpson" },
+    { name: "Lisa", src: Lisa, alt: "Lisa Simpson" },
+    { name: "Maggie", src: Maggie, alt: "Maggie Simpson" },
+    { name: "Marge", src: Marge, alt: "Marge Simpson" },
+    { name: "Moe", src: Moe, alt: "Moe Szyslak" },
+    { name: "Krusty", src: Krusty, alt: "Krusty the Clown" },
+    { name: "Ralph", src: Ralph, alt: "Ralph Wiggum" },
+    { name: "Milhouse", src: Milhouse, alt: "Milhouse" },
+    { name: "Skinner", src: Skinner, alt: "Seymour Skinner" },
+    { name: "Smithers", src: Smithers, alt: "Waylon Smithers" },
   ];
   return characters;
 }
