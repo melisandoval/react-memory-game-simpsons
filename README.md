@@ -5,4 +5,4 @@
 * In each move, you can flip just two cards and see them for a second. Then automatically the cards flip back again, so you have to remember which characters are in those cards. **Your goal is to find all the pair matching cards**. 
 * When you finish the game, a message informs you about how many moves you used and the elapsed time.
 
-### You can play it online here :) : https://simpsons-memory-game.netlify.app/
+### Play the memory game online here! : [https://simpsons-memory-game.netlify.app/](https://memory-game-simpsons.netlify.app/)
