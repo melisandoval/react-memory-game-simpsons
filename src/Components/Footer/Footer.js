@@ -5,6 +5,7 @@ export default function Footer() {
     <div>
       <footer>
         <p>
+          {" "}
           Coded by{" "}
           <a
             href="https://github.com/melisandoval"
@@ -13,7 +14,10 @@ export default function Footer() {
           >
             Melisa Sandoval
           </a>
-          . Images sources:{" "}
+          .{" "}
+        </p>
+        <p>
+          Images sources:{" "}
           <a
             href="https://en.wikipedia.org/wiki/List_of_The_Simpsons_characters"
             target="_blank"
@@ -124,6 +128,16 @@ export default function Footer() {
             rel="noreferrer"
           >
             pngwing.com
+          </a>
+          .
+        </p>
+        <p>
+          Donut gif from{" "}
+          <a
+            href="https://www.behance.net/gallery/33636491/Who-likes-donuts-paper-crafted-animated-gif"
+            target="_blank"
+          >
+            Adrian & Gidi Behance
           </a>
           .
         </p>

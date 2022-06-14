@@ -1,6 +1,6 @@
 import React from "react";
 import "./Modal.css";
-import homerWooHoo from "../assets/homer-woo-hoo.png";
+import homerWooHoo from "../../assets/homer-woo-hoo.png";
 
 // "woo-hoo" Modal:
 export default function Modal() {

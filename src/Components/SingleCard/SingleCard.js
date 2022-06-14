@@ -1,5 +1,5 @@
 import "./SingleCard.css";
-import backCardImg from "../assets/_back_couch_family.png";
+import backCardImg from "../../assets/_back_couch_family.png";
 
 export default function SingleCard({ card, handleChoice, flipped, disabled }) {
   const handleClick = () => {

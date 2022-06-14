@@ -1,5 +1,5 @@
 import "./EndGameModal.css";
-import homerCrazy from "../assets/homer-crazy.png";
+import homerCrazy from "../../assets/homer-crazy.png";
 
 export default function EndGameModal({
   handleCloseEndModal,

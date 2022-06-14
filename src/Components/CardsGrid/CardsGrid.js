@@ -1,5 +1,5 @@
 import React from "react";
-import SingleCard from "./SingleCard.js";
+import SingleCard from "../SingleCard/SingleCard";
 import "./CardsGrid.css";
 
 export default function CardsGrid({

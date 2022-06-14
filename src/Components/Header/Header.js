@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import homerThinking from "../assets/homer-thinking.png";
+import homerThinking from "../../assets/homer-thinking.png";
 
 export default function Header() {
   return (

@@ -1,12 +1,12 @@
 footer {
+  bottom: 0;
   background-color: #ffd90ff2;
   width: 100%;
-  bottom: 0;
 }
 
 footer p {
   font-size: 0.8rem;
-  padding: 1%;
+  padding: 0.3rem;
   margin-block-start: 0;
   margin-block-end: 0;
 }
