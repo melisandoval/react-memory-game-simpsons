@@ -10,7 +10,6 @@ export default function () {
         alt="Donut gif by Adrian & Gidi (Behance)"
         loading="eager"
       />
-      <h1>Loading...</h1>
     </div>
   );
 }
