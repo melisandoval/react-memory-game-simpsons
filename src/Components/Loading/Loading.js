@@ -7,7 +7,7 @@ export default function () {
     <div className="loading">
       <img
         src={donut}
-        alt="Donut gif by Adrian & Gidi (Behance)"
+        alt="Donut gif by Adrian and Gidi Behance"
         loading="eager"
       />
     </div>
