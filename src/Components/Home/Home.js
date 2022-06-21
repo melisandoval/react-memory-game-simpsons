@@ -115,30 +115,8 @@ function Home() {
         cardsQuant={cardsQuant}
       />
       <section className={"cards-grid-container"}>
-        {cards.length === 12 && (
-          <div className="cards-grid-12">
-            <CardsGrid
-              cards={cards}
-              handleChoice={handleChoice}
-              disabled={disabled}
-              choiceOne={choiceOne}
-              choiceTwo={choiceTwo}
-            />
-          </div>
-        )}
-        {cards.length === 18 && (
-          <div className="cards-grid-18">
-            <CardsGrid
-              cards={cards}
-              handleChoice={handleChoice}
-              disabled={disabled}
-              choiceOne={choiceOne}
-              choiceTwo={choiceTwo}
-            />
-          </div>
-        )}
-        {cards.length === 24 && (
-          <div className="cards-grid-24">
+        {cards && (
+          <div className={"cards-grid-" + cards.length}>
             <CardsGrid
               cards={cards}
               handleChoice={handleChoice}
