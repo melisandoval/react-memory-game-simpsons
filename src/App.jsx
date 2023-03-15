@@ -1,7 +1,7 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Home from "./Components/Home/Home";
 import Loading from "./Components/Loading/Loading";
+import "./index.css";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,7 +12,7 @@ export default function App() {
   handleLoading();
 
   return (
-    <div>
+    <div className="app">
       {isLoading && <Loading />}
       {!isLoading && <Home />}
     </div>

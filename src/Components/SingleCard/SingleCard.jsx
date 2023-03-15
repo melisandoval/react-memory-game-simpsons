@@ -1,3 +1,4 @@
+import React from "react";
 import "./SingleCard.css";
 import backCardImg from "../../assets/_back_couch_family.png";
 

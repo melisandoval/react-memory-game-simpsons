@@ -5,11 +5,15 @@ html {
 
 body {
   margin: 0;
-  background-image: url("../public/background_simpsons.jpg");
+}
+
+.app {
+  background-image: url("./assets/background_simpsons.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
-  height: 100%;
+  min-height: 100vh;
+  max-height: fit-content;
+  position: relative;
 }
 
 * {
