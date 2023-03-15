@@ -1,3 +1,4 @@
+import React from "react";
 import "./EndGameModal.css";
 import homerCrazy from "../../assets/homer-crazy.png";
 

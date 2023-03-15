@@ -1,7 +1,8 @@
 .cards-grid-container {
+  min-height: 70vh;
   position: relative;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  display: grid;
+  place-items: center;
 }
 
 /* grid of 18 cards: */

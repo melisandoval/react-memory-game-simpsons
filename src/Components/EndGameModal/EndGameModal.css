@@ -42,3 +42,7 @@
   max-height: 100px;
   padding: 10% 0% 5%;
 }
+
+button {
+  cursor: pointer;
+}
